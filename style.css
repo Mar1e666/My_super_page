@@ -1,0 +1,86 @@
+/* Write your CSS here */
+body{
+    font-family: 'Indie Flower', cursive;
+    background-color: rgba(253, 150, 24, 0.5);
+    color: darkolivegreen;
+    font-size: 25px;
+}
+h1{
+    color: darkred;
+    font-weight: lighter;
+    font-size: 35px;
+}
+h2{
+    color: darkslategray;
+    font-weight: lighter;
+    font-size: 30px;
+}
+a{
+    color: firebrick;
+}
+a:hover{
+    text-decoration: none;
+    color: aqua;
+}
+#banner{
+    border: 2px solid darkorange;
+    text-align: center;
+    background-image: url("https://unsplash.it/1000/600?random");
+}
+#banner img{
+    border-radius: 50%;
+}
+#banner h1{
+    font-size: 50px;
+}
+#banner p{
+    margin-bottom: 35px;
+    opacity: 0.8;
+    font-size: 30px;
+    font-weight: lighter;
+}
+#footer{
+    padding: 30px;
+    background-color: rgba(253, 150, 24, 0.7);
+    color: darkolivegreen;
+}
+.card-white {
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11);
+    padding: 16px;
+    margin: 16px 0px;
+  }
+  .card-white img {
+    margin-bottom: 20px;
+  }
+  .btn-blue {
+    color: white;
+    background-color: darkblue;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11);
+    padding: 15px 20px;
+  }
+  .btn-blue:hover {
+    background-color: #7795f8;
+    color: white;
+  }
+.cards{
+   
+   display: grid;
+   width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+@media(max-width: 992px){
+    .cards{
+    width: 750px;
+    }
+  }
+  @media(max-width: 768px){
+    .cards{
+    width: 90%;
+    grid-template-columns: 1fr;
+    }
+  }
